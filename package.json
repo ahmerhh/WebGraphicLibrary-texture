@@ -34,10 +34,10 @@
       "tape": "^4.4.0"
     },
     "dependencies": {
-      "@vaalentin/geo-plane": "^1.0.1",
-      "@vaalentin/gl-buffer": "^1.0.2",
-      "@vaalentin/gl-context": "^1.0.5",
-      "@vaalentin/gl-program": "^1.0.3",
-      "math-utils": "^1.0.1"
+      "@ahmerhh/geo-plane": "^1.0.1",
+      "@ahmerhh/gl-buffer": "^1.0.2",
+      "@ahmerhh/gl-context": "^1.0.5",
+      "@ahmerhh/gl-program": "^1.0.3",
+      "math-functions": "^1.0.1"
     }
   }
