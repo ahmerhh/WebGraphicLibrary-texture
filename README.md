@@ -2,16 +2,18 @@
 
 WebGL texture wrapper.
 
+WebGraphicLibrary texture is a WebGL texture wrapper that simplifies the creation and management of textures for use in WebGL applications
+
 ## Installation
 
 ```sh
-$ npm install --save @ahmerhh/WebGraphicLibrary_Texture
+$ npm install --save @ahmerhh/WebGraphicLibrary-texture
 ```
 
 ## Usage
 
 ```js
-import Texture from '@ahmerhh/WebGraphicLibrary_Texture';
+import Texture from '@ahmerhh/WebGraphicLibrary-texture';
 
 const texture = new Texture(gl, gl.TEXTURE_2D);
 
@@ -64,7 +66,7 @@ Delete instance. Calls `gl.deleteTexture()`.
 
 ## License
 
-MIT, see [LICENSE.md](https://github.com/ahmerhh/WebGraphicLibrary_Texture/blob/master/LICENSE.md) for more details.
+MIT, see [LICENSE.md](https://github.com/ahmerhh/WebGraphicLibrary-texture/blob/master/LICENSE.md) for more details.
 
 ## Credits
 

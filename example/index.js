@@ -1,7 +1,7 @@
-import getGl from '@ahmerhh/WebGraphicLibrary_Context';
-// import Program from '@ahmerhh/WebGraphicLibrary_Program';
-// import Buffer from '@ahmerhh/WebGraphicLibrary_Buffer';
-// import getPlaneGeometry from '@ahmerhh/WebGraphicLibrary_geo-plane';
+import getGl from '@ahmerhh/WebGraphicLibrary-context';
+// import Program from '@ahmerhh/WebGraphicLibrary-program';
+// import Buffer from '@ahmerhh/WebGraphicLibrary-buffer';
+// import getPlaneGeometry from '@ahmerhh/WebGraphicLibrary-geo-plane';
 import Texture from '../src';
 
 const canvas = document.createElement('canvas');

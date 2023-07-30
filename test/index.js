@@ -1,5 +1,5 @@
 import test from 'tape';
-import getGl from '@ahmerhh/WebGraphicLibrary_Context';
+import getGl from '@ahmerhh/WebGraphicLibrary-context';
 import Texture from '../src';
 
 function loadImage(src) {
