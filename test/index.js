@@ -20,6 +20,7 @@ Promise.all([
   const canvas = document.createElement('canvas');
   const gl = getGl(canvas);
 
+  // Test: Should be instanciable
   test('should be instanciable', t => {
     t.plan(1);
 
@@ -28,6 +29,7 @@ Promise.all([
     t.ok(texture instanceof Texture, 'instance of Texture');
   });
 
+  // Test: Should accept no size and no data
   test('should accept no size and no data', t => {
     t.plan(3);
 
@@ -38,6 +40,7 @@ Promise.all([
     t.equal(texture.data, null, 'data is null');
   });
 
+  // Test: Should accept size and no data
   test('should accept size and no data', t => {
     t.plan(3);
 
@@ -48,6 +51,7 @@ Promise.all([
     t.equal(texture.data, null, 'data is null');
   });
 
+  // Test: Should accept power of two data
   test('should accept power of two data', t => {
     t.plan(3);
     t.timeoutAfter(5000);
@@ -59,6 +63,7 @@ Promise.all([
     t.equal(texture.data, powerOfTwoImg, 'data ok');
   });
 
+  // Test: Should accept non power of two data
   test('should accept non power of two data', t => {
     t.plan(3);
     t.timeoutAfter(5000);
@@ -70,6 +75,7 @@ Promise.all([
     t.equal(texture.data, nonPowerOfTwoImg, 'data ok');
   });
 
+  // Test: Should expose the WebGLTexture object
   test('should expose the WebGLTexture object', t => {
     t.plan(1);
 
@@ -78,6 +84,7 @@ Promise.all([
     t.ok(texture.texture instanceof WebGLTexture, 'instance of WebGLTexture');
   });
 
+  // Test: Should bind the texture to the unit provided
   test('should bind the texture to the unit provided', t => {
     t.plan(4);
 
@@ -93,6 +100,7 @@ Promise.all([
     t.equal(gl.getParameter(gl.TEXTURE_BINDING_2D), textureB.texture, 'binded texture ok');
   });
 
+  // Test: Should delete the texture when disposed
   test('should delete the texture when disposed', t => {
     t.plan(1);
 
@@ -102,5 +110,6 @@ Promise.all([
     t.equal(texture.texture, null, 'texture is null');
   });
 
+  // Close the window after all tests finish
   test.onFinish(() => window.close());
 });
