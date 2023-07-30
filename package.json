@@ -1,28 +1,29 @@
 {
-    "name": "@ahmerhh/WebGraphicLibrary_Texture",
+    "name": "@ahmerhh/webgraphiclibrary-texture",
     "version": "2.0.2",
     "description": "WebGL texture wrapper.",
     "main": "dist/index.js",
     "scripts": {
       "start": "budo example/index.js --live -- -t babelify",
       "test": "browserify test/index.js -t babelify | browser-run --static . | tap-spec",
-      "build": "browserify src/index.js -t babelify -s @ahmerhh/WebGraphicLibrary_Texture > dist/index.js",
+      "build": "browserify src/index.js -t babelify -s @ahmerhh/WebGraphicLibrary-texture > dist/index.js",
       "prepublish": "npm run build"
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/ahmerhh/WebGraphicLibrary_Texture.git"
+      "url": "git+https://github.com/ahmerhh/WebGraphicLibrary-texture.git"
     },
     "keywords": [
       "WebGL",
       "texture"
     ],
     "author": "Ahmer <ahmerhh@proton.me>",
+    "author2": "Ahmer <ahmerhabibb@gmail.com",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/ahmerhh/WebGraphicLibrary_Texture/issues"
+      "url": "https://github.com/ahmerhh/WebGraphicLibrary-texture/issues"
     },
-    "homepage": "https://github.com/ahmerhh/WebGraphicLibrary_Texture#readme",
+    "homepage": "https://github.com/ahmerhh/WebGraphicLibrary-texture#readme",
     "devDependencies": {
       "babel-preset-es2015": "^6.3.13",
       "babelify": "^7.2.0",
