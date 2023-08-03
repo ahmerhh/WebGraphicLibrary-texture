@@ -37,7 +37,7 @@ program.setUniform('uTexture', texture.bind(1));
 #### `texture = new Texture(gl, type, data)`
 
 Create a new texture, if no `data` is provided, the texture is empty.
-- `gl` is the [WebGL context](https://github.com/ahmerhh/gl-context).
+- `gl` is the [WebGL context](https://github.com/ahmerhh/WebGraphicLibrary-context).
 - `type` is the texture type. Default is `gl.TEXTURE_2D`.
 - `data` can be an image, video or canvas.
 
@@ -53,7 +53,7 @@ texture.setData(image);
 #### `texture.bind(unit)`
 
 Bind the texture to the given unit, and returns it. Default is `0`.
-This allows to set a [program](https://github.com/ahmerhh/WebGraphicLibrary_Program) uniform at the same time.
+This allows to set a [program](https://github.com/ahmerhh/WebGraphicLibrary-Program) uniform at the same time.
 
 ```js
 program.setUniform('uTextureA', textureA.bind(0));
