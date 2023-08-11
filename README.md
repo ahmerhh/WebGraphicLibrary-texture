@@ -66,7 +66,7 @@ Delete instance. Calls `gl.deleteTexture()`.
 
 ## License
 
-MIT, see [LICENSE.md](https://github.com/ahmerhh/WebGraphicLibrary-texture/blob/master/LICENSE.md) for more details.
+MIT, see [LICENSE.md](https://github.com/ahmerhh/WebGraphicLibrary-texture/blob/master/LICENSE) for more details.
 
 ## Credits
 
